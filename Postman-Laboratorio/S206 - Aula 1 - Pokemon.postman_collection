@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "d238f06e-4102-4350-97c3-7cc4c0975540",
+		"name": "S203 - Aula 1 - Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45100426",
+		"_collection_link": "https://iuryteixeira-336923.postman.co/workspace/Iury-Teixeira's-Workspace~8d5b1d50-a4a3-4b23-892e-f1d268f9707a/collection/45100426-d238f06e-4102-4350-97c3-7cc4c0975540?action=share&source=collection_link&creator=45100426"
+	},
+	"item": [
+		{
+			"name": "Localiza pokemon com sucesso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/tyranitar",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"tyranitar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Não localiza pokemon (Pokemon não existe)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/tyranita",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"tyranita"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Não localiza pokemon (Endpoint falho)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemo/tyranitar",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemo",
+						"tyranitar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
