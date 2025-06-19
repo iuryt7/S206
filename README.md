@@ -35,7 +35,7 @@ npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generato
 npx cypress run
 ```
 
-## Testes Cypress
+## Testes Postman
 
 1. **Instalar dependências do projeto:**
 
